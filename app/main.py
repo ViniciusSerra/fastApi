@@ -8,10 +8,10 @@ from fastapi.middleware.cors import CORSMiddleware
 load_dotenv()
 
 
-from routes.users.user_router import router
+from .routes.users.user_router import router as user_router
 
 
-from app.util.const import * 
+from .util.const import APP_HOST, APP_PORT
 
 app = FastAPI()
 
